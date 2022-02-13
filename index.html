@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Music🙌</title>
+</head>
+<body>
+    <div class="container">
+        <div class="tarjeta">
+            <div>
+                <h3>Estas Escuchando...</h3>
+            </div>
+            <div class="contImg espacio">
+                <img id="caratula" src="" alt="">
+            </div>
+            <div class="espacio">
+                <h2 id="nombreCancion"></h2>
+                <h4 id="artista"></h4>
+            </div>
+            <div id="contenedorBarra" class="barra">
+                <div id="barrita" class="progreso"></div>
+            </div>
+            <div class="botones espacio">
+                <button class="btns">
+                    <i class="fas fa-undo-alt"></i>
+                </button>
+                <button class="btns">
+                    <i id="prev" class="fas fa-backward"></i>
+                </button>
+                <button class="btns">
+                    <i id="play" class="fas fa-play"></i>
+                </button>
+                <button class="btns">
+                    <i id="next" class="fas fa-forward"></i>
+                </button>
+                <button class="btns">
+                    <i class="fas fa-random"></i>
+                </button>
+            </div>
+            <div>
+                <audio src="" id="audio"></audio>
+            </div>
+            <div>
+                <ul class="songs" id="listadoCanciones"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="app2.js"></script>
+</body>
+</html>

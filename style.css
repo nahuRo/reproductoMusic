@@ -1,0 +1,64 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #470D21;
+    color: #470D21;
+}
+
+.tarjeta{
+    background-color: #F9E4D4;
+    padding: 30px;
+    border-radius: 10px ;
+}
+
+.tarjeta .botones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjeta .contImg{
+    text-align: center;
+}
+
+.tarjeta .contImg img{
+    border-radius: 15px;
+    min-width: 216px;
+
+
+}
+.btns{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.espacio{
+    padding: 10px 0;
+}
+a{
+    text-decoration: none;
+    color: #470D21;
+}
+
+.barra{
+    cursor: pointer;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: rgba(231, 119, 119, 0.63);
+}
+
+.progreso{
+    height: 100%;
+    border-radius: 5px;
+    width: 0%;
+    background-color: #D67D3E;
+}
