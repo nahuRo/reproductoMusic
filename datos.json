@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "nombre": "512",
+        "artista": "Mora & Jhay Cortez",
+        "file": "1.mp3",
+        "caratula": "1.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Colorín Colorado",
+        "artista": "Justin Quiles",
+        "file": "2.mp3",
+        "caratula": "2.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Día De Pago",
+        "artista": "Duki & Ovi",
+        "file": "3.mp3",
+        "caratula": "3.png"
+    },
+    {
+        "id": 4,
+        "nombre": "Me Gusta Lo Simple",
+        "artista": "Duki & Aleman",
+        "file": "4.mp3",
+        "caratula": "4.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Salimo De Noche",
+        "artista": "Tiago PZK & Trueno",
+        "file": "5.mp3",
+        "caratula": "5.png"
+    },
+    {
+        "id": 6,
+        "nombre": "Yo Voy",
+        "artista": "Zion & Lennox feat. Daddy Yankee'",
+        "file": "6.mp3",
+        "caratula": "6.png"
+    },
+    {
+        "id": 7,
+        "nombre": "Dos Problemas",
+        "artista": "Blessd, Javiielo & Neutro Shorty",
+        "file": "7.mp3",
+        "caratula": "7.png"
+    },
+    {
+        "id": 8,
+        "nombre": "Medallo",
+        "artista": "Blessd, Justin Quiles & Lenny Tavárez",
+        "file": "8.mp3",
+        "caratula": "8.jpg"
+    },
+    {
+        "id": 9,
+        "nombre": "Dile",
+        "artista": "Don Omar",
+        "file": "9.mp3",
+        "caratula": "9.jpg"
+    },
+    {
+        "id": 10,
+        "nombre": "Ella y Yo",
+        "artista": "Aventura feat. Don Omar",
+        "file": "10.mp3",
+        "caratula": "10.jpg"
+    },
+    {
+        "id": 11,
+        "nombre": "Turismo",
+        "artista": "Justin Quiles",
+        "file": "11.mp3",
+        "caratula": "11.jpg"
+    },
+    {
+        "id": 12,
+        "nombre": "Socio",
+        "artista": "Eladio Carrión & Luar La L",
+        "file": "12.mp3",
+        "caratula": "12.png"
+    },
+    {
+        "id": 13,
+        "nombre": "Mirame (Remix)",
+        "artista": "Nio García, Rauw Alejandro & Lenny Tavárez",
+        "file": "13.mp3",
+        "caratula": "13.jpg"
+    },
+    {
+        "id": 14,
+        "nombre": "TATA (Remix)",
+        "artista": "ladio Carrión, J Balvin & Daddy Yankee",
+        "file": "14.mp3",
+        "caratula": "14.png"
+    },
+    {
+        "id": 15,
+        "nombre": "Ele Uve",
+        "artista": "Eladio Carrión, Natanael Cano & Ovi",
+        "file": "15.mp3",
+        "caratula": "15.jpg"
+    },
+    {
+        "id": 16,
+        "nombre": "Ganas Sobran",
+        "artista": "Bryant Myers & Miky Woodz",
+        "file": "16.mp3",
+        "caratula": "16.jpg"
+    },
+    {
+        "id": 17,
+        "nombre": "Hasta Abajo",
+        "artista": "Kevin Roldán, Bryant Myers & Lyanno",
+        "file": "17.mp3",
+        "caratula": "17.jpg"
+    },
+    {
+        "id": 18,
+        "nombre": "Dream Girl (Remix)",
+        "artista": "Ir Sais & Rauw Alejandro",
+        "file": "18.mp3",
+        "caratula": "18.jpg"
+    },
+    {
+        "id": 19,
+        "nombre": "Hecha Pa’ Mí",
+        "artista": "Boza",
+        "file": "19.mp3",
+        "caratula": "19.jpg"
+    },
+    {
+        "id": 20,
+        "nombre": "Piensan",
+        "artista": "Myke Towers",
+        "file": "20.mp3",
+        "caratula": "20.jpg"
+    }
+]

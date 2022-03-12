@@ -1,46 +1,24 @@
-const cancionesList = [
-    {
-        nombre : '512',
-        artista : 'Mora & Jhay Cortez',
-        file : '1.mp3',
-        caratula : '1.jpg'
-    },
-    {
-        nombre : 'Colorín Colorado',
-        artista : 'Justin Quiles',
-        file : '2.mp3',
-        caratula : '2.jpg'
-    },
-    {
-        nombre : 'Día De Pago',
-        artista : 'Duki & Ovi',
-        file : '3.mp3',
-        caratula : '3.png'
-    },
-    {
-        nombre : 'Me Gusta Lo Simple',
-        artista : 'Duki & Aleman',
-        file : '4.mp3',
-        caratula : '4.jpg'
-    },
-    {
-        nombre : 'Salimo De Noche',
-        artista : 'Tiago PZK & Trueno',
-        file : '5.mp3',
-        caratula : '5.png'
-    },
-    {
-        nombre : 'Yo Voy',
-        artista : 'Zion & Lennox feat. Daddy Yankee',
-        file : '7.mp3',
-        caratula : '7.png'
-    }
-]
+let cancionesList = [];
+let favoritass = [];
 
+fetch('./datos.json')
+    .then(datos => datos.json())
+    .then(datos => {
+        cargaSongs(datos);
+        cancionesList = datos;
+        aleatorioFuntion(datos);
+        misFav(datos);
+    }
+)
+
+    
+    
+
+    
 // capturo cancion actual 
 let actualSong = null;
 
-// capturar elementos del DOM
+// ---------- capturar elementos del DOM ---------- 
 const songs = document.getElementById('listadoCanciones');
 const audio = document.getElementById('audio');
 const caratula = document.getElementById('caratula');
@@ -51,7 +29,12 @@ const prev = document.getElementById('prev');
 const next = document.getElementById('next');
 const progress = document.getElementById('barrita');
 const barraContenedora = document.getElementById('contenedorBarra');
-
+const barraVol = document.getElementById('barraVol')
+const miTable = document.getElementById('miTable');
+const aleatorio = document.getElementById('aleatorio');
+const volumenIcon = document.getElementById('volumenIcon');
+const looper = document.getElementById('looper');
+const favorito = document.getElementById('favorito');
 
 
 // escucho el click de play para pusar/reproducir
@@ -60,38 +43,71 @@ play.addEventListener( 'click', () => audio.paused ? playSong() : pausarSong() )
 next.addEventListener( 'click', () => nextSong());
 prev.addEventListener( 'click', () => prevSong());
 
+barraVol.addEventListener( 'click', () => volumenAccion());
+
+
 barraContenedora.addEventListener('click', cambiarProgreso)
+
+
+
 // cargar links de canciones 
-function cargaSongs() {
+function cargaSongs(cancionesList) {
     cancionesList.forEach((song, index) =>{
-        // crear li
-        const item = document.createElement('li');
-        // crear a
-        const link = document.createElement('a');
-        link.href = '#';
-        //agrego contenido a etiqueta a
-        link.textContent = song.nombre;
-        //agrego a dentro de un li
-        item.appendChild(link);
-        //agrego li dentro del ul
-        songs.appendChild(item);
+        // creo elementos
+        const item = document.createElement('tr');
+        const link1 = document.createElement('th');
+        const link2 = document.createElement('th');
+        const link3 = document.createElement('th');
+        const link4 = document.createElement('th');
+        const ancla = document.createElement('a');
+
+        // les asigno informacion
+        ancla.href = '#';
+        ancla.textContent = song.nombre;
+
+        link1.textContent = song.id;
+        link3.textContent = song.artista;
+        link4.textContent = song.id;
+
+        // le asigno un padre
+        link2.appendChild(ancla);
+
+        item.appendChild(link1);
+        item.appendChild(link2);
+        item.appendChild(link3);
+        item.appendChild(link4);
+
+        miTable.appendChild(item);
+
         // escucho click de la lista de canciones cargadas para reproducir esa cancion y demas
-        link.addEventListener('click', () => loadSong(index));
+        ancla.addEventListener('click', () => loadSong(index));
     })
 }
 
+favorito.addEventListener('click',() => {
+    if (!favoritass.includes(actualSong)) {
+        favoritass.push(actualSong);
+    }
+    console.log(favoritass);
+})
 // cargar canciones
 function loadSong(indiceSong) { // traigo el indice del link de la cancion que hice click
-    audio.src ='./music/' + cancionesList[indiceSong].file;    
-    actualSong = indiceSong
+    audio.src ='./music/' + cancionesList[indiceSong].file;   
+    actualSong = indiceSong;
     playSong();
     cambioBotones();
     datosSongs(indiceSong);    
+    Toastify({
+        text: `estas escuchando: ${cancionesList[indiceSong].nombre}`,
+        duration: 1000,
+        style: {
+            background: "transparent",
+            color: "#fff"
+        },
+    }).showToast();
+
+
 }
-
-
-
-
 // cargo el datos e imagenes de la cancion que se esta reproduciendo
 function datosSongs(indice) {
     caratula.src ='./assets/' + cancionesList[indice].caratula; 
@@ -100,19 +116,48 @@ function datosSongs(indice) {
     nombreCancion.textContent = cancionesList[indice].nombre; 
     artista.textContent =cancionesList[indice].artista; 
 }
-
-
-
 audio.addEventListener('timeupdate' , actualizarProgreso);
 
 // proxima cancion al terminar una
 audio.addEventListener('ended', () => nextSong())
 
+
+
+
+
+
+//volumen
+volumenIcon.addEventListener('click',() => {
+    audio.muted ? audio.muted = false : audio.muted = true;
+    volumenIcon.classList.toggle('fa-volume-off');
+})
+function volumenAccion() {
+    audio.volume =  barraVol.value;
+    if (audio.volume === 0) {
+        volumenIcon.classList.remove('fa-volume-low');
+        volumenIcon.classList.remove('fa-volume-high');
+        volumenIcon.classList.add('fa-volume-off');
+    }
+    if (audio.volume > 0 && audio.volume < .5) {
+        volumenIcon.classList.remove('fa-volume-off');
+        volumenIcon.classList.remove('fa-volume-high');
+        volumenIcon.classList.add('fa-volume-low');
+    } else if(audio.volume >= .5){
+        volumenIcon.classList.remove('fa-volume-off');
+        volumenIcon.classList.remove('fa-volume-low');
+        volumenIcon.classList.add('fa-volume-high');
+    }
+}
+
+
+
+
 // barra de progreso
-function actualizarProgreso(event) { // no entiendo este parametro
-    const {duration, currentTime} = event.srcElement; // no entiendo
+function actualizarProgreso(event) { // event es un argumento para usar los metodos y propiedades de los eventos
+    const {duration, currentTime} = event.srcElement; // Desestructuración de objetos en JavaScript
     porcentaje = currentTime * 100 / duration;
     progress.style.width = porcentaje + '%';
+
 }
 // modificar barra de proceso
 function cambiarProgreso(event) {
@@ -142,12 +187,34 @@ function cambioBotones() { // actualizar el icono de play/pausa
         play.classList.replace("fa-play","fa-pause");
     }
 }
+
 function playSong() { // reproducir cancion
     audio.play();
     cambioBotones();
+
 }
 function pausarSong() { // pausarr cancion
     audio.pause(); // pausar audio
     cambioBotones();
 }
-cargaSongs();
+function aleatorioFuntion(dato) {
+    aleatorio.addEventListener('click',() => {
+        loadSong(Math.floor(Math.random() * dato.length));    // numeros aleatorios enteros del 0 al dato.length
+    })
+}
+
+
+
+
+looper.addEventListener('click',() => {
+    if (audio.loop == false) {
+        audio.loop = true;
+        looper.style.color = 'wheat';
+    }else if (audio.loop == true){
+        audio.loop = false;
+        looper.style.color = 'black';
+    }
+})
+
+
+
