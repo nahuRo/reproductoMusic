@@ -83,17 +83,19 @@ main{
             }
         }
 
-        .buscador{
-            .buscadorBox{
-
+        .botonPlayRandom{
+            i{
+                font-size: 4rem;
+                color: azure;
+                margin-bottom: 1rem;
+                &:hover{
+                    color: rgb(121, 190, 121);
+                }
             }
         }
 
-
         .listadoSongs{
-            .contSongs{
-
-            }
+            
             table{
                 width: 100%;
                 text-align: justify;
@@ -192,7 +194,7 @@ main{
     }
 }
 
-.btns{
+button{
     border: none;
     background-color: transparent;
     font-size: 25px;
@@ -201,3 +203,12 @@ main{
 
 
 // transform: rotate(90deg);  PARA ROTAR LA BARRA DE VOLUMEN A VERTICAL
+
+
+.favoritoAdd{
+    color: green;
+}
+
+.holaa{
+    display: none;
+}

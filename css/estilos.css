@@ -77,6 +77,16 @@ main .caja .header .perfilUser .contUsuario .usuario {
   border-radius: 50%;
 }
 
+main .caja .botonPlayRandom i {
+  font-size: 4rem;
+  color: azure;
+  margin-bottom: 1rem;
+}
+
+main .caja .botonPlayRandom i:hover {
+  color: #79be79;
+}
+
 main .caja .listadoSongs table {
   width: 100%;
   text-align: justify;
@@ -210,10 +220,18 @@ main .reproductor .extrasRepro > div button {
   margin-right: 10px;
 }
 
-.btns {
+button {
   border: none;
   background-color: transparent;
   font-size: 25px;
   cursor: pointer;
+}
+
+.favoritoAdd {
+  color: green;
+}
+
+.holaa {
+  display: none;
 }
 /*# sourceMappingURL=estilos.css.map */

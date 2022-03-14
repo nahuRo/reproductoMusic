@@ -4,139 +4,178 @@
         "nombre": "512",
         "artista": "Mora & Jhay Cortez",
         "file": "1.mp3",
-        "caratula": "1.jpg"
+        "caratula": "1.jpg",
+        "url":"./music/1.mp3"
     },
     {
         "id": 2,
         "nombre": "Colorín Colorado",
         "artista": "Justin Quiles",
         "file": "2.mp3",
-        "caratula": "2.jpg"
+        "caratula": "2.jpg",
+        "url":"./music/2.mp3"
+
     },
     {
         "id": 3,
         "nombre": "Día De Pago",
         "artista": "Duki & Ovi",
         "file": "3.mp3",
-        "caratula": "3.png"
+        "caratula": "3.png",
+        "url":"./music/3.mp3"
+
     },
     {
         "id": 4,
         "nombre": "Me Gusta Lo Simple",
         "artista": "Duki & Aleman",
         "file": "4.mp3",
-        "caratula": "4.jpg"
+        "caratula": "4.jpg",
+        "url":"./music/4.mp3"
+
     },
     {
         "id": 5,
         "nombre": "Salimo De Noche",
         "artista": "Tiago PZK & Trueno",
         "file": "5.mp3",
-        "caratula": "5.png"
+        "caratula": "5.png",
+        "url":"./music/5.mp3"
+
     },
     {
         "id": 6,
         "nombre": "Yo Voy",
         "artista": "Zion & Lennox feat. Daddy Yankee'",
         "file": "6.mp3",
-        "caratula": "6.png"
+        "caratula": "6.png",
+        "url":"./music/6.mp3"
+
     },
     {
         "id": 7,
         "nombre": "Dos Problemas",
         "artista": "Blessd, Javiielo & Neutro Shorty",
         "file": "7.mp3",
-        "caratula": "7.png"
+        "caratula": "7.png",
+        "url":"./music/7.mp3"
+
     },
     {
         "id": 8,
         "nombre": "Medallo",
         "artista": "Blessd, Justin Quiles & Lenny Tavárez",
         "file": "8.mp3",
-        "caratula": "8.jpg"
+        "caratula": "8.jpg",
+        "url":"./music/8.mp3"
+
     },
     {
         "id": 9,
         "nombre": "Dile",
         "artista": "Don Omar",
         "file": "9.mp3",
-        "caratula": "9.jpg"
+        "caratula": "9.jpg",
+        "url":"./music/9.mp3"
+
     },
     {
         "id": 10,
         "nombre": "Ella y Yo",
         "artista": "Aventura feat. Don Omar",
         "file": "10.mp3",
-        "caratula": "10.jpg"
+        "caratula": "10.jpg",
+        "url":"./music/10.mp3"
+
     },
     {
         "id": 11,
         "nombre": "Turismo",
         "artista": "Justin Quiles",
         "file": "11.mp3",
-        "caratula": "11.jpg"
+        "caratula": "11.jpg",
+        "url":"./music/11.mp3"
+
     },
     {
         "id": 12,
         "nombre": "Socio",
         "artista": "Eladio Carrión & Luar La L",
         "file": "12.mp3",
-        "caratula": "12.png"
+        "caratula": "12.png",
+        "url":"./music/12.mp3"
+
     },
     {
         "id": 13,
         "nombre": "Mirame (Remix)",
         "artista": "Nio García, Rauw Alejandro & Lenny Tavárez",
         "file": "13.mp3",
-        "caratula": "13.jpg"
+        "caratula": "13.jpg",
+        "url":"./music/13.mp3"
+
     },
     {
         "id": 14,
         "nombre": "TATA (Remix)",
         "artista": "ladio Carrión, J Balvin & Daddy Yankee",
         "file": "14.mp3",
-        "caratula": "14.png"
+        "caratula": "14.png",
+        "url":"./music/14.mp3"
+
     },
     {
         "id": 15,
         "nombre": "Ele Uve",
         "artista": "Eladio Carrión, Natanael Cano & Ovi",
         "file": "15.mp3",
-        "caratula": "15.jpg"
+        "caratula": "15.jpg",
+        "url":"./music/15.mp3"
+
     },
     {
         "id": 16,
         "nombre": "Ganas Sobran",
         "artista": "Bryant Myers & Miky Woodz",
         "file": "16.mp3",
-        "caratula": "16.jpg"
+        "caratula": "16.jpg",
+        "url":"./music/16.mp3"
+
     },
     {
         "id": 17,
         "nombre": "Hasta Abajo",
         "artista": "Kevin Roldán, Bryant Myers & Lyanno",
         "file": "17.mp3",
-        "caratula": "17.jpg"
+        "caratula": "17.jpg",
+        "url":"./music/17.mp3"
+
     },
     {
         "id": 18,
         "nombre": "Dream Girl (Remix)",
         "artista": "Ir Sais & Rauw Alejandro",
         "file": "18.mp3",
-        "caratula": "18.jpg"
+        "caratula": "18.jpg",
+        "url":"./music/18.mp3"
+
     },
     {
         "id": 19,
         "nombre": "Hecha Pa’ Mí",
         "artista": "Boza",
         "file": "19.mp3",
-        "caratula": "19.jpg"
+        "caratula": "19.jpg",
+        "url":"./music/19.mp3"
+
     },
     {
         "id": 20,
         "nombre": "Piensan",
         "artista": "Myke Towers",
         "file": "20.mp3",
-        "caratula": "20.jpg"
+        "caratula": "20.jpg",
+        "url":"./music/20.mp3"
+
     }
 ]
