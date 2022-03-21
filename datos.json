@@ -5,7 +5,7 @@
         "artista": "Mora & Jhay Cortez",
         "file": "1.mp3",
         "caratula": "1.jpg",
-        "url":"./music/1.mp3"
+        "time":"3:13"
     },
     {
         "id": 2,
@@ -13,8 +13,7 @@
         "artista": "Justin Quiles",
         "file": "2.mp3",
         "caratula": "2.jpg",
-        "url":"./music/2.mp3"
-
+        "time":"3:15"
     },
     {
         "id": 3,
@@ -22,8 +21,7 @@
         "artista": "Duki & Ovi",
         "file": "3.mp3",
         "caratula": "3.png",
-        "url":"./music/3.mp3"
-
+        "time":"3:19"
     },
     {
         "id": 4,
@@ -31,8 +29,7 @@
         "artista": "Duki & Aleman",
         "file": "4.mp3",
         "caratula": "4.jpg",
-        "url":"./music/4.mp3"
-
+        "time":"2:17"
     },
     {
         "id": 5,
@@ -40,8 +37,7 @@
         "artista": "Tiago PZK & Trueno",
         "file": "5.mp3",
         "caratula": "5.png",
-        "url":"./music/5.mp3"
-
+        "time":"2:58"
     },
     {
         "id": 6,
@@ -49,8 +45,7 @@
         "artista": "Zion & Lennox feat. Daddy Yankee'",
         "file": "6.mp3",
         "caratula": "6.png",
-        "url":"./music/6.mp3"
-
+        "time":"3:54"
     },
     {
         "id": 7,
@@ -58,8 +53,7 @@
         "artista": "Blessd, Javiielo & Neutro Shorty",
         "file": "7.mp3",
         "caratula": "7.png",
-        "url":"./music/7.mp3"
-
+        "time":"4:12"
     },
     {
         "id": 8,
@@ -67,8 +61,7 @@
         "artista": "Blessd, Justin Quiles & Lenny Tavárez",
         "file": "8.mp3",
         "caratula": "8.jpg",
-        "url":"./music/8.mp3"
-
+        "time":"3:51"
     },
     {
         "id": 9,
@@ -76,8 +69,7 @@
         "artista": "Don Omar",
         "file": "9.mp3",
         "caratula": "9.jpg",
-        "url":"./music/9.mp3"
-
+        "time":"3:25"
     },
     {
         "id": 10,
@@ -85,8 +77,7 @@
         "artista": "Aventura feat. Don Omar",
         "file": "10.mp3",
         "caratula": "10.jpg",
-        "url":"./music/10.mp3"
-
+        "time":"4:27"
     },
     {
         "id": 11,
@@ -94,8 +85,7 @@
         "artista": "Justin Quiles",
         "file": "11.mp3",
         "caratula": "11.jpg",
-        "url":"./music/11.mp3"
-
+        "time":"2:45"
     },
     {
         "id": 12,
@@ -103,8 +93,7 @@
         "artista": "Eladio Carrión & Luar La L",
         "file": "12.mp3",
         "caratula": "12.png",
-        "url":"./music/12.mp3"
-
+        "time":"4:14"
     },
     {
         "id": 13,
@@ -112,8 +101,7 @@
         "artista": "Nio García, Rauw Alejandro & Lenny Tavárez",
         "file": "13.mp3",
         "caratula": "13.jpg",
-        "url":"./music/13.mp3"
-
+        "time":"6:17"
     },
     {
         "id": 14,
@@ -121,8 +109,7 @@
         "artista": "ladio Carrión, J Balvin & Daddy Yankee",
         "file": "14.mp3",
         "caratula": "14.png",
-        "url":"./music/14.mp3"
-
+        "time":"4:26"
     },
     {
         "id": 15,
@@ -130,8 +117,7 @@
         "artista": "Eladio Carrión, Natanael Cano & Ovi",
         "file": "15.mp3",
         "caratula": "15.jpg",
-        "url":"./music/15.mp3"
-
+        "time":"3:50"
     },
     {
         "id": 16,
@@ -139,8 +125,7 @@
         "artista": "Bryant Myers & Miky Woodz",
         "file": "16.mp3",
         "caratula": "16.jpg",
-        "url":"./music/16.mp3"
-
+        "time":"3:54"
     },
     {
         "id": 17,
@@ -148,8 +133,7 @@
         "artista": "Kevin Roldán, Bryant Myers & Lyanno",
         "file": "17.mp3",
         "caratula": "17.jpg",
-        "url":"./music/17.mp3"
-
+        "time":"3:50"
     },
     {
         "id": 18,
@@ -157,8 +141,7 @@
         "artista": "Ir Sais & Rauw Alejandro",
         "file": "18.mp3",
         "caratula": "18.jpg",
-        "url":"./music/18.mp3"
-
+        "time":"3:11"
     },
     {
         "id": 19,
@@ -166,8 +149,7 @@
         "artista": "Boza",
         "file": "19.mp3",
         "caratula": "19.jpg",
-        "url":"./music/19.mp3"
-
+        "time":"3:05"
     },
     {
         "id": 20,
@@ -175,7 +157,6 @@
         "artista": "Myke Towers",
         "file": "20.mp3",
         "caratula": "20.jpg",
-        "url":"./music/20.mp3"
-
+        "time":"2:54"
     }
 ]

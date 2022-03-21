@@ -20,22 +20,27 @@ main {
 }
 
 main .slide {
+  position: relative;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: slide;
-  background-color: #000;
+  background-color: #F7CCAC;
   padding: 1.5rem;
 }
 
-main .slide ul li {
+main .slide .navegacion ul li {
   list-style-type: none;
   padding: 5px 20px;
   font-size: 18px;
 }
 
-main .slide ul li a {
+main .slide .navegacion ul li a {
   text-decoration: none;
-  color: white;
+  color: #fff;
+}
+
+main .slide .navegacion ul li a:hover {
+  color: #632626;
 }
 
 main .slide .contLogo {
@@ -44,7 +49,13 @@ main .slide .contLogo {
 }
 
 main .slide .contLogo img {
-  width: 65%;
+  width: 100%;
+}
+
+main .slide .contCaraturala .caratulamini {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 main .caja {
@@ -53,8 +64,7 @@ main .caja {
   grid-area: caja;
   padding: 1rem;
   overflow-y: auto;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ed213a), to(#93291e));
-  background: linear-gradient(to top, #ed213a, #93291e);
+  background-color: #D79771;
 }
 
 main .caja .header {
@@ -65,6 +75,7 @@ main .caja .header {
 }
 
 main .caja .header .fotoPlaylist img {
+  border-radius: 7px;
   width: 90%;
 }
 
@@ -72,9 +83,17 @@ main .caja .header .perfilUser h1 {
   font-size: 5rem;
 }
 
-main .caja .header .perfilUser .contUsuario .usuario {
-  width: 50px;
-  border-radius: 50%;
+main .caja .header .perfilUser .contUsuario {
+  color: #fff;
+}
+
+main .caja .header .perfilUser .contUsuario a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main .caja .header .perfilUser .contUsuario a:hover {
+  color: #632626;
 }
 
 main .caja .botonPlayRandom i {
@@ -84,7 +103,7 @@ main .caja .botonPlayRandom i {
 }
 
 main .caja .botonPlayRandom i:hover {
-  color: #79be79;
+  color: #632626;
 }
 
 main .caja .listadoSongs table {
@@ -101,6 +120,14 @@ main .caja .listadoSongs table thead {
 
 main .caja .listadoSongs table tbody {
   color: #fff;
+}
+
+main .caja .listadoSongs table tbody tr:hover {
+  color: #632626;
+}
+
+main .caja .listadoSongs table tbody tr:hover a {
+  color: #632626;
 }
 
 main .caja .listadoSongs table tbody a {
@@ -128,7 +155,7 @@ main .reproductor {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-color: #1A1A40;
+  background-color: #F7CCAC;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2.1fr 7fr 3fr;
@@ -150,19 +177,10 @@ main .reproductor .infoRepro {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-}
-
-main .reproductor .infoRepro .caratulamini {
-  position: absolute;
-  bottom: 63px;
-  left: 0;
-}
-
-main .reproductor .infoRepro .espacio {
   text-align: center;
 }
 
-main .reproductor .infoRepro .espacio h4 {
+main .reproductor .infoRepro h4 {
   font-size: 13px;
 }
 
@@ -201,6 +219,10 @@ main .reproductor .controlesRepro .barra .progreso {
   background-color: #fff;
 }
 
+main .reproductor .controlesRepro .barra:hover .progreso {
+  background-color: #632626;
+}
+
 main .reproductor .extrasRepro {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
@@ -227,11 +249,7 @@ button {
   cursor: pointer;
 }
 
-.favoritoAdd {
-  color: green;
-}
-
-.holaa {
-  display: none;
+.active {
+  color: #632626 !important;
 }
 /*# sourceMappingURL=estilos.css.map */

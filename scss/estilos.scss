@@ -15,50 +15,50 @@ main{
     "slide caja"
     "repro repro";
     .slide{
+        position: relative;
         grid-area: slide;
-        background-color: #000;
+        background-color: #F7CCAC;
         padding: 1.5rem;
-        ul li{
-            list-style-type: none;
-            padding: 5px 20px;
-            font-size: 18px;
-            a{
-                text-decoration: none;
-                color: white;
+        .navegacion{
+            ul li{
+                list-style-type: none;
+                padding: 5px 20px;
+                font-size: 18px;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    &:hover{
+                        color: #632626;
+                    }
+                }
             }
         }
         .contLogo{
             padding: 10px 0px ;
             margin-bottom: 1rem;
             img{
-                width: 65%;
+                width: 100%;
             }
         }
-        .navegacion{
-            // ul li{
-            //     list-style-type: none;
-            //     padding: 5px 20px;
-            //     font-size: 18px;
-            //     a{
-            //         text-decoration: none;
-            //         color: white;
-            //     }
-            // }
+        .contCaraturala{
+            .caratulamini{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
         }
     }
     .caja{
         grid-area: caja;
-        // background-color: aquamarine;
         padding: 1rem;
-        // height: calc(100vh - 71.78px);
         overflow-y: auto;
-        background: linear-gradient(to top, #ed213a, #93291e); 
+        background-color: #D79771; 
         .header{
             display: flex;
             padding: 2rem;
-            // background-color: #D82148;
             .fotoPlaylist{
                 img{
+                    border-radius: 7px;
                     width: 90%;
                 }
             }
@@ -67,19 +67,15 @@ main{
                     font-size: 5rem;
                 }
                 .contUsuario{
-                    .usuario{
-                        width: 50px;
-                        border-radius: 50%;
+                    color: #fff;
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                        &:hover{
+                            color: #632626;
+                        }
                     }
                 }
-            }
-            .contModo{
-                // .btns{
-                //     border: none;
-                //     background-color: transparent;
-                //     font-size: 25px;
-                //     cursor: pointer;
-                // }
             }
         }
 
@@ -89,7 +85,7 @@ main{
                 color: azure;
                 margin-bottom: 1rem;
                 &:hover{
-                    color: rgb(121, 190, 121);
+                    color: #632626;
                 }
             }
         }
@@ -106,6 +102,12 @@ main{
                 }
                 tbody{
                     color: #fff;
+                    tr:hover{
+                        color: #632626;
+                        a{
+                            color: #632626;
+                        }
+                    }
                     a{
                         text-decoration: none;
                         color: #fff;
@@ -116,21 +118,14 @@ main{
                     position: sticky;
                 }
             }
-        }
-
-
-        
-        
+        } 
     }
     .reproductor{
         grid-area: repro;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        background-color: #1A1A40;
-
-
-
+        background-color: #F7CCAC;
         display: grid;
         grid-template-columns: 2.1fr 7fr 3fr;
         grid-template-areas: 
@@ -142,16 +137,9 @@ main{
             justify-content: center;
             align-items: center;
             position: relative;
-            .caratulamini{
-                position: absolute;
-                bottom: 63px;
-                left: 0;
-            }
-            .espacio{
-                text-align: center;
-                h4{
-                    font-size: 13px;
-                }
+            text-align: center;
+            h4{
+                font-size: 13px;
             }
         }
 
@@ -177,6 +165,9 @@ main{
                     width: 0%;
                     background-color: #fff;
                 }
+                &:hover .progreso{
+                    background-color: #632626;
+                }
             }
 
         }
@@ -201,14 +192,6 @@ button{
     cursor: pointer;
 }
 
-
-// transform: rotate(90deg);  PARA ROTAR LA BARRA DE VOLUMEN A VERTICAL
-
-
-.favoritoAdd{
-    color: green;
-}
-
-.holaa{
-    display: none;
+.active{
+    color : #632626!important; 
 }
