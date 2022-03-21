@@ -10,7 +10,7 @@ if (localStorage.getItem('favoritos')) {
 }
 
 
-// ---- Variables globales ----
+// ---- Variables ----
 let cambiaso = false;
 let actualSong = null;
 let aleatorio = undefined;
@@ -53,6 +53,7 @@ const cantSong = document.getElementById('cantSong');
 
 //texto ininial(principal de la lista)
 const textInicial = document.getElementById('textInicial');
+
 
 // ---- Datos Fetch ----
 fetch('./datos.json')
@@ -153,14 +154,13 @@ fetch('./datos.json')
             item.appendChild(link4);
             item.appendChild(link5);
             
-            
             miTable.appendChild(item);
             // escucho click de la lista de canciones cargadas para reproducir esa cancion y demas
             ancla.addEventListener('click', () => loadSong(song.id, cancionesList));
             
         })
 }
-// ---- Funciones interactivas de cargar ----
+// ---- Funciones interactivas de la carga ----
     
 function loadSong(idSong, canciones) { // traigo el indice del link de la cancion que hice click
     indice = canciones.findIndex(e => e.id == idSong)
@@ -197,7 +197,7 @@ function datosSongs(indice, cancion) {
     artista.textContent = cancion[indice].artista; 
 }
 
-// ---- Funciones complementarias (2do plano)  ----
+// ---- Funciones complementarias ('2do plano')  ----
 
     // ---- Eventos
         // click boton play --> pauso / reproduzco
@@ -277,7 +277,7 @@ function datosSongs(indice, cancion) {
     function cambiarProgreso(event) {
         const barraProgreso = this.offsetWidth; // obtengo el ancho de la barra total contenedora por cada cancion
         const anchoProgreso = event.offsetX; // obtengo el ancho de la barra en el punto que hago click del total de la barra
-        const punto = (anchoProgreso / barraProgreso) * audio.duration; // lo multiplico por la duracion para ver que parte de la cancion equivale ese click en la barra
+        const punto = (anchoProgreso / barraProgreso) * audio.duration; // lo multiplico por la duracion para ver que parte de la cancion que equivale a ese click en la barra
         audio.currentTime = punto;
     }
     function finSong() {
