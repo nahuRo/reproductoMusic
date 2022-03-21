@@ -1,5 +1,4 @@
 // ---- Arreglos ----
-
 var favoritass = [];
 var cancionesList = [];
 
@@ -118,7 +117,7 @@ fetch('./datos.json')
 // ---- Funcion interface ----
     function cargaSongs(cancionesList, cora) {
         cantSong.textContent =  cancionesList.length;
-        miTable.innerHTML = ''; // borro las lista para cargarlas de nuevo
+        miTable.innerHTML = ''; 
         cancionesList.forEach((song) =>{
             // creo elementos
             const item = document.createElement('tr');
@@ -161,7 +160,6 @@ fetch('./datos.json')
         })
 }
 // ---- Funciones interactivas de la carga ----
-    
 function loadSong(idSong, canciones) { // traigo el indice del link de la cancion que hice click
     indice = canciones.findIndex(e => e.id == idSong)
     audio.src ='./music/' + canciones[indice].file;   
@@ -198,7 +196,6 @@ function datosSongs(indice, cancion) {
 }
 
 // ---- Funciones complementarias ('2do plano')  ----
-
     // ---- Eventos
         // click boton play --> pauso / reproduzco
         btnPlay.addEventListener( 'click', () => audio.paused ? playSong() : pausarSong()); 
@@ -313,7 +310,3 @@ function datosSongs(indice, cancion) {
         audio.muted ? audio.muted = false : audio.muted = true;
         btnVolumen.classList.toggle('fa-volume-off');
     }
-
-
-
-    
