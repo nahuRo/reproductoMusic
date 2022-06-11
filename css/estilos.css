@@ -19,6 +19,16 @@ main {
       grid-template-areas: "slide caja" "repro repro";
 }
 
+@media all and (max-width: 767px) {
+  main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "slide" "caja" "repro";
+  }
+}
+
 main .slide {
   position: relative;
   -ms-grid-row: 1;
@@ -26,6 +36,12 @@ main .slide {
   grid-area: slide;
   background-color: #F7CCAC;
   padding: 1.5rem;
+}
+
+@media all and (max-width: 767px) {
+  main .slide {
+    display: none;
+  }
 }
 
 main .slide .navegacion ul li {
@@ -67,6 +83,12 @@ main .caja {
   background-color: #D79771;
 }
 
+@media all and (max-width: 767px) {
+  main .caja {
+    padding: 1rem 0.3rem;
+  }
+}
+
 main .caja .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,13 +96,25 @@ main .caja .header {
   padding: 2rem;
 }
 
+@media all and (max-width: 767px) {
+  main .caja .header {
+    padding: 0rem;
+  }
+}
+
 main .caja .header .fotoPlaylist img {
   border-radius: 7px;
   width: 90%;
 }
 
-main .caja .header .perfilUser h1 {
+main .caja .header .perfilUser .textHeader {
   font-size: 5rem;
+}
+
+@media all and (max-width: 767px) {
+  main .caja .header .perfilUser .textHeader {
+    font-size: 1rem;
+  }
 }
 
 main .caja .header .perfilUser .contUsuario {
@@ -120,6 +154,12 @@ main .caja .listadoSongs table thead {
 
 main .caja .listadoSongs table tbody {
   color: #fff;
+}
+
+@media all and (max-width: 767px) {
+  main .caja .listadoSongs table tbody {
+    font-size: 12px;
+  }
 }
 
 main .caja .listadoSongs table tbody tr:hover {
@@ -163,6 +203,14 @@ main .reproductor {
       grid-template-areas: "info estadoSong fav";
 }
 
+@media all and (max-width: 767px) {
+  main .reproductor {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "estadoSong";
+  }
+}
+
 main .reproductor .infoRepro {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -180,6 +228,12 @@ main .reproductor .infoRepro {
   text-align: center;
 }
 
+@media all and (max-width: 767px) {
+  main .reproductor .infoRepro {
+    display: none;
+  }
+}
+
 main .reproductor .infoRepro h4 {
   font-size: 13px;
 }
@@ -189,6 +243,12 @@ main .reproductor .controlesRepro {
   -ms-grid-column: 2;
   grid-area: estadoSong;
   padding: 0rem 1rem;
+}
+
+@media all and (max-width: 767px) {
+  main .reproductor .controlesRepro {
+    padding: 1rem;
+  }
 }
 
 main .reproductor .controlesRepro .botones {
@@ -202,6 +262,12 @@ main .reproductor .controlesRepro .botones {
           align-items: center;
   width: 50%;
   margin: 0 auto;
+}
+
+@media all and (max-width: 767px) {
+  main .reproductor .controlesRepro .botones {
+    width: 100%;
+  }
 }
 
 main .reproductor .controlesRepro .barra {
@@ -227,6 +293,12 @@ main .reproductor .extrasRepro {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: fav;
+}
+
+@media all and (max-width: 767px) {
+  main .reproductor .extrasRepro {
+    display: none;
+  }
 }
 
 main .reproductor .extrasRepro > div {

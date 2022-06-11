@@ -168,14 +168,15 @@ function loadSong(idSong, canciones) { // traigo el indice del link de la cancio
     cambioBotones();
     datosSongs(indice, canciones); 
 
-    Toastify({
-        text: `estas escuchando: ${canciones[indice].nombre}`,
-        duration: 1000,
-        style: {
-            background: "transparent",
-            color: "#fff"
-        },
-    }).showToast();
+    // Toastify({
+    //     text: `estas escuchando: ${canciones[indice].nombre}`,
+    //     duration: 1000,
+    //     style: {
+    //         background: "transparent",
+    //         color: "#fff"
+            
+    //     },
+    // }).showToast();
 }
 
 

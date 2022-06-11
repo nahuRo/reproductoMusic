@@ -14,11 +14,22 @@ main{
     grid-template-areas: 
     "slide caja"
     "repro repro";
+    @media all and (max-width: 767px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "slide"
+        "caja"
+        "repro";
+    }
     .slide{
         position: relative;
         grid-area: slide;
         background-color: #F7CCAC;
         padding: 1.5rem;
+        @media all and (max-width: 767px) {
+            display: none;
+        }
         .navegacion{
             ul li{
                 list-style-type: none;
@@ -53,9 +64,15 @@ main{
         padding: 1rem;
         overflow-y: auto;
         background-color: #D79771; 
+        @media all and (max-width: 767px) {
+            padding: 1rem 0.3rem;
+        }
         .header{
             display: flex;
             padding: 2rem;
+            @media all and (max-width: 767px) {
+                padding: 0rem;
+            }
             .fotoPlaylist{
                 img{
                     border-radius: 7px;
@@ -63,8 +80,11 @@ main{
                 }
             }
             .perfilUser{
-                h1{
+                .textHeader{
                     font-size: 5rem;
+                    @media all and (max-width: 767px) {
+                        font-size: 1rem;
+                    }
                 }
                 .contUsuario{
                     color: #fff;
@@ -102,6 +122,9 @@ main{
                 }
                 tbody{
                     color: #fff;
+                    @media all and (max-width: 767px) {
+                        font-size: 12px;
+                    }
                     tr:hover{
                         color: #632626;
                         a{
@@ -131,6 +154,12 @@ main{
         grid-template-areas: 
         "info estadoSong fav";
 
+        @media all and (max-width: 767px) {
+            grid-template-columns:1fr ;
+            grid-template-areas:
+            "estadoSong";
+        }
+
         .infoRepro{
             grid-area: info;
             display: flex;
@@ -138,6 +167,10 @@ main{
             align-items: center;
             position: relative;
             text-align: center;
+            @media all and (max-width: 767px) {
+                display: none;
+            }
+
             h4{
                 font-size: 13px;
             }
@@ -146,12 +179,18 @@ main{
         .controlesRepro{
             grid-area: estadoSong;
             padding: 0rem 1rem;
+            @media all and (max-width: 767px) {
+                padding: 1rem;
+            }
             .botones{
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
                 width: 50%;
                 margin: 0 auto;
+                @media all and (max-width: 767px) {
+                    width: 100%;
+                }
             }
             .barra{
                 cursor: pointer;
@@ -174,6 +213,9 @@ main{
 
         .extrasRepro{
             grid-area: fav;
+            @media all and (max-width: 767px) {
+                display: none;
+            }
             & > div{
                 display: flex;
                 justify-content: center;
